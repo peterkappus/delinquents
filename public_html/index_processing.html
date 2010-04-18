@@ -1,0 +1,25 @@
+<html> 
+<head> 
+<title>SUNDAY PROJECT</title>      
+<script language="javascript" src="processing.init.js"></script> 
+<script language="javascript" src="processing.min.js"></script> 
+</head> 
+<body> 
+ 
+<script type="application/processing"> 
+
+PImage b;
+
+function setup(){
+	// Images must be in the "data" directory to load correctly
+	b = loadImage("california.png");
+	background(80);
+}
+
+function draw(){
+	image(b, 0, 0);
+}
+</script>
+<canvas width="800px" height="800px" id="cali"></canvas> 
+</body> 
+</html>
